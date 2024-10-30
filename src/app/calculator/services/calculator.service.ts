@@ -14,7 +14,7 @@ export class CalculatorService {
 
   public constructNumber(value: string): void {
     if (NUMBERS.includes(value)) {
-      if (this.result.length >= 10) return;
+      if (this.result().length >= 10) return;
       if (value === '0' && this.result() === '0') return;
       if (this.result() === '0') return this.result.set(value);
       this.result.update((prev) => prev + value);
