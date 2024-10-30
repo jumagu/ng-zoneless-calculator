@@ -4,7 +4,6 @@ import {
   output,
   Component,
   viewChild,
-  HostBinding,
   type ElementRef,
   ViewEncapsulation,
   ChangeDetectionStrategy,
