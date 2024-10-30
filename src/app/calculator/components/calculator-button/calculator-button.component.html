@@ -1,0 +1,10 @@
+<button
+  #button
+  class="calc-button"
+  [class.pressed]="isPressed()"
+  [class.highlighted]="isDoubleSize()"
+  [class]="isOperator() ? 'operator' : 'default'"
+  (click)="clickHandler()"
+>
+  <ng-content />
+</button>

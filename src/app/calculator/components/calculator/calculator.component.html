@@ -1,0 +1,59 @@
+<div
+  class="w-full h-40 bg-gradient-to-b from-gray-800 to-gray-700 flex items-end text-right"
+>
+  <div class="w-full py-5 px-6">
+    @if (subResult() !== '0' || lastOperator()) {
+    <span class="text-4xl text-white font-thin">
+      {{ subResult() }} {{ lastOperator() }}
+    </span>
+    <br />
+    }
+    <span class="text-6xl text-white font-thin">{{ result() }}</span>
+  </div>
+</div>
+
+<div class="w-full bg-gradient-to-b from-indigo-400 to-indigo-500">
+  <div class="flex w-full">
+    <calculator-button (onClick)="clickHandler($event)">C</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">+/-</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">%</calculator-button>
+    <calculator-button isOperator (onClick)="clickHandler($event)"
+      >÷</calculator-button
+    >
+  </div>
+
+  <div class="flex w-full">
+    <calculator-button (onClick)="clickHandler($event)">7</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">8</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">9</calculator-button>
+    <calculator-button isOperator (onClick)="clickHandler($event)"
+      >x</calculator-button
+    >
+  </div>
+
+  <div class="flex w-full">
+    <calculator-button (onClick)="clickHandler($event)">4</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">5</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">6</calculator-button>
+    <calculator-button isOperator (onClick)="clickHandler($event)"
+      >-</calculator-button
+    >
+  </div>
+
+  <div class="flex w-full">
+    <calculator-button (onClick)="clickHandler($event)">1</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">2</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">3</calculator-button>
+    <calculator-button isOperator (onClick)="clickHandler($event)"
+      >+</calculator-button
+    >
+  </div>
+
+  <div class="flex w-full">
+    <calculator-button (onClick)="clickHandler($event)">0</calculator-button>
+    <calculator-button (onClick)="clickHandler($event)">.</calculator-button>
+    <calculator-button isOperator isDoubleSize (onClick)="clickHandler($event)"
+      >=</calculator-button
+    >
+  </div>
+</div>

@@ -1,0 +1,34 @@
+.calc-button {
+  @apply w-full h-16 outline-none focus:outline-none text-white text-xl font-light transition-colors;
+}
+
+.default {
+  @apply hover:bg-indigo-700;
+}
+
+.default,
+.operator {
+  @apply hover:bg-opacity-20;
+}
+
+.operator,
+.highlighted {
+  @apply bg-indigo-700;
+}
+
+.operator {
+  @apply bg-opacity-10;
+}
+
+.highlighted {
+  @apply bg-opacity-30 hover:bg-opacity-40;
+}
+
+.pressed {
+  @apply bg-indigo-800;
+}
+
+/* ! deprecated - not recommended for new angular apps */
+/* ::ng-deep .is-operation {
+  @apply bg-indigo-700 bg-opacity-10;
+} */
