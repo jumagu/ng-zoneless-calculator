@@ -10,7 +10,7 @@ import CalculatorComponent from '@/calculator/components/calculator/calculator.c
   changeDetection: ChangeDetectionStrategy.OnPush,
   host: {
     class:
-      'w-full max-w-[300px] mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden',
+      'w-full min-w-[250px] max-w-[300px] mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden',
   },
 })
 export default class CalculatorViewComponent {}
