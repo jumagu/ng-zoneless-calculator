@@ -4,9 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run test && ng build",
+    "build": "npm run test:build && ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test --no-progress --browsers=ChromeHeadless",
+    "test:build": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
     "test:coverage": "ng test --code-coverage"
   },
   "private": true,
