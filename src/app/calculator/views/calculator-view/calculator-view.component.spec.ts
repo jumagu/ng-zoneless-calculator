@@ -26,7 +26,7 @@ describe('CalculatorViewComponent', () => {
 
   it('should contain specific tailwind classes', () => {
     const tailwindClasses =
-      'w-full max-w-[300px] mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden'.split(
+      'w-full min-w-[250px] max-w-[300px] mx-auto rounded-xl bg-gray-100 shadow-xl text-gray-800 relative overflow-hidden'.split(
         ' '
       );
 
