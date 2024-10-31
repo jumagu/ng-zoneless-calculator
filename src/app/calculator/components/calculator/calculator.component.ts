@@ -1,9 +1,9 @@
 import {
   inject,
+  computed,
   Component,
   viewChildren,
   ChangeDetectionStrategy,
-  computed,
 } from '@angular/core';
 
 import { CalculatorService } from '@/calculator/services/calculator.service';
